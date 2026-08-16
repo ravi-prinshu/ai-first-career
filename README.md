@@ -1,66 +1,70 @@
-# AI-First Career Journey
+# AI-First Career
 
-## Goal
+A hands-on learning journey focused on becoming an AI-first Business Analyst / Project Manager.
 
-Become an AI-First Business Analyst / Product Manager with strong
-development knowledge and the ability to build AI-powered applications
-and AI agents.
+## Week 1 — Foundations
 
-## Roadmap
+### Git & GitHub
+- Git and GitHub fundamentals
+- Repository, commit, staging, push
+- Created and pushed the project repository
 
-1. Development Fundamentals
-2. Python & SQL
-3. APIs & Backend Development
-4. LLM Application Development
-5. RAG
-6. AI Agents
-7. AI Product Management
-8. Deployment & Cloud
-9. Enterprise AI
-10. Capstone Projects
-
-## Current Progress
-
-### August 2026 — Foundation Month
-
-#### Week 1 — Development Environment & Fundamentals
-
-- GitHub setup
-- Git setup
-- VS Code setup
-- Python 3.14.7 setup
-- GitHub CLI setup
-- First Python program
-- First Git repository
-- First GitHub push
-- Basic Git/GitHub concepts
-- Basic software development concepts
-- Basic AI ecosystem concepts
-
-## Key Concepts Learned
-
-### Development
-
+### Development Concepts
 - Python
 - SQL
 - API
 - JSON
-- Database
-- Backend
-- Frontend
 
-### AI
-
+### AI Concepts
 - LLM
-- Embeddings
 - RAG
-- Tool Calling
 - AI Agents
 
-## Projects
+---
 
-### 1. Hello AI World
+## Week 2 — Development Environment & Python Basics
 
-- First Python program
-- Technology: Python
-- Status: Completed
+### Tools
+- Windows Terminal / PowerShell
+- VS Code
+- Python interpreter
+- Virtual environments
+- pip
+
+### Python
+- Running `.py` files
+- `input()`
+- `print()`
+- Variables
+- Integers and strings
+- Basic calculations
+- Type conversion with `int()`
+- Understanding syntax errors
+- Understanding type errors
+
+### Git Workflow
+- `git status`
+- `git add`
+- `git commit`
+- `git push`
+- `.gitignore`
+- Virtual environment exclusion
+
+### AI-Assisted Development
+- Writing requirements for AI
+- Asking AI to generate code
+- Reviewing AI-generated code
+- Testing AI suggestions
+- Debugging AI-generated/modified code
+
+### Mini Project
+Built a Python profile generator that:
+- Accepts name, age and role
+- Calculates age next year
+- Displays a formatted profile
+
+## Current Status
+
+- Week 1: ✅ Complete
+- Week 2: ✅ Complete
+- Week 3: ⬜ Not started
