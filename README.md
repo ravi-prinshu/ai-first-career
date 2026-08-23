@@ -63,8 +63,39 @@ Built a Python profile generator that:
 - Calculates age next year
 - Displays a formatted profile
 
-## Current Status
+## August Week 3 — Python Core & APIs
 
-- Week 1: ✅ Complete
-- Week 2: ✅ Complete
-- Week 3: ⬜ Not started
+### Topics Covered
+
+- Python variables and data types
+- Conditional statements and Boolean logic
+- Lists and dictionaries
+- `for` and `while` loops
+- Functions, parameters, arguments, and `return`
+- JSON handling with Python
+- Reading and writing files
+- Using the `requests` library
+- Making GET requests to APIs
+- Working with API responses and status codes
+- Extracting data from JSON responses
+
+### Week 3 Mini Project — Project Risk Analyzer
+
+Built a Python program that:
+
+- Stores project risks in a list
+- Classifies risks using conditions
+- Uses a function to analyze risks
+- Stores results in a dictionary
+- Converts the dictionary to JSON
+- Saves the risk report to a JSON file
+- Reads the JSON file back into Python
+- Extracts specific risk information
+
+### Files
+
+- `week3_functions.py` — Function practice
+- `week3_api.py` — API and JSON response practice
+- `week3_project.py` — Week 3 mini project
+- `risk_report.json` — Generated project risk report
+
