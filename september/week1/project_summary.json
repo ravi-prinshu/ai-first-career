@@ -1,0 +1,15 @@
+{
+    "delayed_projects": 3,
+    "total_cost": 6100000,
+    "average_delay": 46.67,
+    "high_cost_projects": [
+        "ERP",
+        "Data Migration",
+        "Cloud Migration"
+    ],
+    "high_risk_projects": [
+        "ERP",
+        "Data Migration",
+        "Cloud Migration"
+    ]
+}

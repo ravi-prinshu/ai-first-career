@@ -1,0 +1,37 @@
+[
+    {
+        "name": "ERP",
+        "status": "Delayed",
+        "cost": 1200000,
+        "delayed_days": 45
+
+    },
+     {
+        "name": "CRM",
+        "status": "On Track",
+        "cost": 800000,
+        "delayed_days": 0
+
+    },
+     {
+        "name": "Data Migration",
+        "status": "Delayed",
+        "cost": 1500000,
+        "delayed_days": 60
+
+    },
+     {
+        "name": "Mobile App",
+        "status": "On Track",
+        "cost": 600000,
+        "delayed_days": 10
+
+    },
+     {
+        "name": "Cloud Migration",
+        "status": "Delayed",
+        "cost": 2000000,
+        "delayed_days": 35
+
+    }
+]
