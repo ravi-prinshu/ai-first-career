@@ -104,4 +104,40 @@ ERP | n1,200,000 | Delayed
 Project Outcome
 This project demonstrates the ability to combine SQL and Python to transform project-level data into actionable
 portfolio insights. The analysis can help project and program managers understand portfolio health, schedule risk,
-financial exposure, high-priority projects, and overall project status.
+financial exposure, high-priority projects, and overall project status.\
+
+### JOIN Practice
+
+A second table, `project_managers`, was created to practice relationships between tables.
+
+The project demonstrated:
+
+- INNER JOIN
+- LEFT JOIN
+- Table aliases
+- JOIN conditions using `ON`
+- Handling NULL values
+- Identifying projects without an assigned manager
+
+Example:
+
+```sql
+SELECT p.project_name,
+       pm.manager_name
+FROM projects p
+LEFT JOIN project_managers pm
+    ON p.project_id = pm.project_id
+WHERE pm.manager_name IS NULL;
+
+This query identifies projects that do not have a manager assigned.
+
+
+### 3. Run one final test
+
+```powershell
+python portfolio_analysis.py
+
+Make sure the portfolio results are still correct and the JOIN section shows:
+
+===== PROJECTS WITHOUT MANAGERS =====
+Cloud Migration

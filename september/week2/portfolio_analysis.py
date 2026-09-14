@@ -141,27 +141,7 @@ def main():
     """)
 
     connection.commit()
-
-    print("Projects table created successfully.")
-
-    # Insert project data
-    projects = [
-        (1, "ERP", "Delayed", 1200000, 45),
-        (2, "CRM", "On Track", 800000, 0),
-        (3, "Data Migration", "Delayed", 1500000, 60),
-        (4, "Mobile App", "On Track", 600000, 10),
-        (5, "Cloud Migration", "Delayed", 2000000, 35)
-    ]
-
-    cursor.executemany("""
-    INSERT OR IGNORE INTO projects
-    (project_id, project_name, status, cost, delay_days)
-    VALUES (?, ?, ?, ?, ?)
-    """, projects)
-
-    connection.commit()
-
-
+    
     # ========================================================
     # 1. PORTFOLIO OVERVIEW
     # ========================================================
@@ -223,12 +203,89 @@ def main():
         )
 
 
-    connection.close()
+    # ============================================================
+    # 5. JOIN PRACTICE
+    # ============================================================
 
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS project_managers (
+            project_id INTEGER PRIMARY KEY,
+            manager_name TEXT
+        )
+        """)
+
+    connection.commit()
+
+    # Insert project data
+    projects = [
+            (1, "ERP", "Delayed", 1200000, 45),
+            (2, "CRM", "On Track", 800000, 0),
+            (3, "Data Migration", "Delayed", 1500000, 60),
+            (4, "Mobile App", "On Track", 600000, 10),
+            (5, "Cloud Migration", "Delayed", 2000000, 35)
+        ]
+
+    cursor.executemany("""
+        INSERT OR IGNORE INTO projects
+        (project_id, project_name, status, cost, delay_days)
+        VALUES (?, ?, ?, ?, ?)
+        """, projects)
+
+    connection.commit()
+
+    managers = [
+        (1, "Amit"),
+        (2, "Priya"),
+        (3, "Rahul"),
+        (4, "Sneha")
+    ]
+
+    cursor.executemany("""
+        INSERT OR IGNORE INTO project_managers
+        (project_id, manager_name)
+        VALUES (?, ?)
+        """, managers)
+
+    connection.commit()
+
+    # ============================================================
+    # INNER JOIN
+    # ============================================================
+
+    cursor.execute("""
+    SELECT p.project_name,
+        pm.manager_name
+    FROM projects p
+    LEFT JOIN project_managers pm
+        ON p.project_id = pm.project_id
+    """)
+
+    joined_projects = cursor.fetchall()
+
+    print("\n===== PROJECT MANAGERS — LEFT JOIN =====")
+
+    for project_name, manager_name in joined_projects:
+        print(project_name, "| Manager:", manager_name)
+
+    cursor.execute("""
+    SELECT p.project_name
+    FROM projects p
+    LEFT JOIN project_managers pm
+        ON p.project_id = pm.project_id
+    WHERE pm.manager_name IS NULL
+    """)
+
+    unassigned_projects = cursor.fetchall()
+
+    print("\n===== PROJECTS WITHOUT MANAGERS =====")
+
+    for project in unassigned_projects:
+        print(project[0])
+
+    connection.close()
 
 # ============================================================
 # PROGRAM ENTRY POINT
 # ============================================================
-
 if __name__ == "__main__":
     main()
