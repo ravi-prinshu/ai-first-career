@@ -1,0 +1,50 @@
+[
+    {
+        "project_name": "ERP",
+        "risk_level": "High Risk",
+        "reason": "The project is delayed by 45 days and its budget of ₹1,200,000 exceeds ₹10 lakh.",
+        "recommended_actions": [
+            "Conduct a root cause analysis to identify the key drivers of the 45-day delay.",
+            "Re-evaluate resource allocation and consider fast-tracking critical path tasks.",
+            "Engage stakeholders to review project scope and revise the schedule baseline."
+        ]
+    },
+    {
+        "project_name": "CRM",
+        "risk_level": "Low Risk",
+        "reason": "The project has 0 days of delay and is progressing on schedule within budget.",
+        "recommended_actions": [
+            "Continue routine tracking and milestone reviews to maintain current momentum.",
+            "Ensure resource availability for upcoming project phases."
+        ]
+    },
+    {
+        "project_name": "Data Migration",
+        "risk_level": "High Risk",
+        "reason": "The project is delayed by 60 days and has a high budget of ₹1,500,000, exceeding ₹10 lakh.",
+        "recommended_actions": [
+            "Escalate the schedule slippage to executive leadership for corrective intervention.",
+            "Perform crash scheduling on remaining deliverables to compress the timeline.",
+            "Audit data mapping and validation processes to remove technical bottlenecks."
+        ]
+    },
+    {
+        "project_name": "Mobile App",
+        "risk_level": "Medium Risk",
+        "reason": "The project is delayed by 10 days, but its cost of ₹600,000 is under the ₹10 lakh threshold.",
+        "recommended_actions": [
+            "Negotiate quick deadline adjustments or minor scope tradeoffs to absorb the 10-day slip.",
+            "Optimize current team velocity to prevent further schedule slippage."
+        ]
+    },
+    {
+        "project_name": "Cloud Migration",
+        "risk_level": "High Risk",
+        "reason": "The project faces a 35-day delay and carries a high financial commitment of ₹2,000,000 (exceeding ₹10 lakh).",
+        "recommended_actions": [
+            "Review cloud architecture deployment plans to streamline execution.",
+            "Allocate additional specialized engineering support to key delay areas.",
+            "Establish weekly schedule variance tracking with key vendors and stakeholders."
+        ]
+    }
+]
