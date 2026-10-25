@@ -6,3 +6,4 @@ chroma_db/
 .env
 .env.*
 !.env.example
+october/week4/portfolio_test.db
